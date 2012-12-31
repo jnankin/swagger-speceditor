@@ -50,9 +50,21 @@
 				<label class="control-label">Swagger version</label>
 				<div class="controls"><input type="text" data-bind="value: swaggerVersion" /></div>
 			  </div>
+			  <div class="control-group">
+				<label class="control-label">Base Path</label>
+				<div class="controls"><input type="text" data-bind="value: basePath" /></div>
+			  </div>
 			</div>
 		  </div>
-		  <div class="tab-pane" id="apis">api</div>
+		  <div class="tab-pane" id="apis">
+			<div class="container form-horizontal">
+			  <h2>API Endpoints</h2>
+			  <div class="control-group">
+				<label class="control-label">API Name</label>
+				<div class="controls"><input type="text" data-bind="value: name" /></div>
+			  </div>
+			</div>
+		  </div>
 		  <div class="tab-pane" id="models">models</div>
 		</div>
 		

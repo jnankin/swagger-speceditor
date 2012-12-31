@@ -32,6 +32,6 @@ $().ready(function(){
 
 function init(data){
 	viewModel = new SwaggerViewModel(data);
-	ko.applyBindings(viewModel);
+	ko.applyBindings(viewModel, document.getElementsByTagName('html')[0]);
 	$('#loadDataModal').modal('hide');
 }
